@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Practica2.iml" filepath="$PROJECT_DIR$/Practica2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica2_punto2/practica2_punto2.iml" filepath="$PROJECT_DIR$/practica2_punto2/practica2_punto2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica2_punto3/practica2_punto3.iml" filepath="$PROJECT_DIR$/practica2_punto3/practica2_punto3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/practica2_punto4/practica2_punto4.iml" filepath="$PROJECT_DIR$/practica2_punto4/practica2_punto4.iml" />
+    </modules>
+  </component>
+</project>

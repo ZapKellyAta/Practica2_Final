@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica2 Punto3</string>
+    <string name="btnResultado">Calcular</string>
+    <string name="txtLado">Ingrese Lado</string>
+    <string name="txtRadio">Ingrese Radio</string>
+    <string name="txtBase">Ingrese Base</string>
+    <string name="txtAltura">Ingrese Altura</string>
+    <string name="txtRes">Resultado</string>
+</resources>

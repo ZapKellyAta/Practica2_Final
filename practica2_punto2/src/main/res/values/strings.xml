@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Practica2 Punto2</string>
+    <string name="title">Calcladora Sencilla</string>
+    <string name="btnResultado">Calcular</string>
+    <string name="txtNum1">Ingrese numero</string>
+    <string name="txtNum2">Ingrese numero</string>
+    <string name="txtRes">Resultado</string>
+    <string name="Suma">Suma</string>
+    <string name="Resta">Resta</string>
+    <string name="Multi">Multiplicacion</string>
+    <string name="Div">Division</string>
+</resources>

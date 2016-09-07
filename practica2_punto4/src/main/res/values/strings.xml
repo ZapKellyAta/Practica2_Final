@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Practica2 Punto4</string>
+    <string name="Ingrese">Login</string>
+    <string name="Usuario1">Login</string>
+    <string name="Ingrese1">Password</string>
+    <string name="Contraseña1">Password</string>
+    <string name="Ingrese2">Repetir Password</string>
+    <string name="Correo1">Email</string>
+    <string name="Ingrese3">Emal</string>
+    <string name="Ingrese4">Genero</string>
+    <string name="Femenino1">Femenino</string>
+    <string name="Masculino1">Masculino</string>
+    <string name="Ingrese5">Fecha de nacimiento</string>
+    <string name="Fecha">DD/MM/AAAA</string>
+    <string name="Ingrese6">Ciudad</string>
+    <string-array name="Arreglo_ciudades">
+        <item>Medellin</item>
+        <item>Bogotá</item>
+        <item>Cali</item>
+        <item>Cartagena</item>
+        <item>Santander</item>
+    </string-array>
+    <string name="Leer1">Jugar</string>
+    <string name="Vertv1">Bailar</string>
+    <string name="Correr1">Cantar</string>
+    <string name="Bailar1">Comer</string>
+    <string name="Ingrese7">Hobbies</string>
+    <string name="Aceptar1">Ingresar</string>
+    <string name="Ingrese8">Los datos son:</string>
+    <string name="Ingrese9">Calendario</string>
+</resources>

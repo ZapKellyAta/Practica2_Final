@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.25"
+        android:layout_height="0dp"
+        android:background="@color/yellow">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.7"
+            android:layout_height="match_parent"
+            android:background="@color/palevioletred">
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Usuario1"
+                        android:id="@+id/eNombre"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Contraseña1"
+                        android:id="@+id/eContraseña"
+                        android:inputType="textPassword"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Contraseña1"
+                        android:id="@+id/eContraseña1"
+                        android:inputType="textPassword"
+                        android:textSize="20sp" />
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/Correo1"
+                        android:id="@+id/eCorreo"
+                        android:textSize="20sp" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/Grupo">
+                        <RadioButton
+                            android:id="@+id/radio_femenino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Femenino1"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"/>
+                        <RadioButton
+                            android:id="@+id/radio_masculino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Masculino1"
+                            android:onClick="onRadioButtonClicked"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"/>
+                    </RadioGroup>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Ingrese5"
+                        android:textSize="20dp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Ingrese9"
+                            android:onClick="setDate"
+                            android:id="@+id/bFechas"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Fecha"
+                            android:layout_marginLeft="20dp"
+                            android:id="@+id/tFecha"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Ingrese6"
+                        android:textAlignment="center"
+                        android:textSize="20dp" />
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spCiudad"
+                        android:textAlignment="center"
+                        android:entries="@array/Arreglo_ciudades">
+                    </Spinner>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Ingrese7"
+                        android:textSize="20dp" />
+                    <CheckBox android:id="@+id/checkbox_leer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Leer1"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_vertv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Vertv1"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_correr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Correr1"
+                        android:onClick="onCheckboxClicked"/>
+                    <CheckBox android:id="@+id/checkbox_bailar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Bailar1"
+                        android:onClick="onCheckboxClicked"/>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Aceptar1"
+                        android:id="@+id/bAceptar"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:background="@color/yellowgreen">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/Ingrese8"
+                android:textSize="20dp"
+                android:id="@+id/Mostrar"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

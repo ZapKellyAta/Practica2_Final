@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/whitesmoke">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="0.20"
+        android:background="@color/whitesmoke">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculadora De Areas"
+            android:textSize="35sp"
+            android:paddingTop="40sp"
+            android:layout_marginBottom="10sp"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_gravity="fill_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="0.80">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.40">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/radioGroup1"
+                    >
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cuadro"
+                        android:onClick="operButton"
+                        android:id="@+id/btnCuadro" />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rectanglo"
+                        android:onClick="operButton"
+                        android:id="@+id/btnRec"
+                        android:layout_gravity="center_horizontal" />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Triangulo"
+                        android:onClick="operButton"
+                        android:id="@+id/btnTri" />
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Circulo"
+                        android:onClick="operButton"
+                        android:id="@+id/btnCir"
+                        android:layout_gravity="center_horizontal" />                    </RadioGroup>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitesmoke"
+                    android:hint="@string/txtLado"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="10sp"
+                    android:textSize="15sp"
+                    android:ems="50"
+                    android:id="@+id/txtLado" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitesmoke"
+                    android:hint="@string/txtRadio"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:ems="50"
+                    android:id="@+id/txtRadio" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitesmoke"
+                    android:hint="@string/txtBase"
+                    android:inputType="numberDecimal"
+                    android:textSize="15sp"
+                    android:ems="50"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginTop="18sp"
+                    android:id="@+id/txtBase" />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/whitesmoke"
+                    android:hint="@string/txtAltura"
+                    android:textSize="15sp"
+                    android:inputType="numberDecimal"
+                    android:ems="50"
+                    android:id="@+id/txtAltura" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.20">
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:weightSum="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Calcular"
+                android:hint="@string/btnResultado"
+                android:onClick="Operar"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.70" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="fill_horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="0.20">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="20sp"
+                android:id="@+id/txtRes"
+                android:textSize="35sp"
+                android:textAlignment="center"
+                android:textColor="@color/violet"
+                android:textStyle="bold"
+                android:hint="@string/txtRes"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
